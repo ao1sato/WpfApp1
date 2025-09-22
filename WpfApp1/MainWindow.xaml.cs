@@ -61,7 +61,7 @@ namespace WpfApp1
             }
             else
             {
-                MessageBox.Show("введите столбцы и строки");
+                MessageBox.Show("введите столбцы и строки"); //luuluujlullululululululuulu
             }
         }
 
