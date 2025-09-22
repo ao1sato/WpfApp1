@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="пр 1" Height="450" Width="800" >
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="меню">
+                <MenuItem Header="выход" Click="MenuItem_Click1"></MenuItem>
+                <MenuItem Header="о программе" Click="b3_Click"></MenuItem>
+                <MenuItem Header="сохранить" Click="MenuItem_Click3"></MenuItem>
+                <MenuItem Header="открыть" Click="MenuItem_Click4"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+
+        <GroupBox Header="зона работы" Margin="0,18,0,0">
+
+            <Grid>
+
+                <DataGrid x:Name="data"  Margin="0,10,534,254"/>
+                <TextBox x:Name="strok" HorizontalAlignment="Left" Margin="34,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="diap" HorizontalAlignment="Left" Margin="34,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="b1" Content="расчет" HorizontalAlignment="Left" Margin="159,212,0,0" VerticalAlignment="Top" Height="18" Click="b1_Click" Width="53"/>
+
+                <Label Content="колонки" HorizontalAlignment="Left" Margin="34,235,0,0" VerticalAlignment="Top"/>
+                <Label Content="диапазон" HorizontalAlignment="Left" Margin="34,290,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="b4" Content="решение" HorizontalAlignment="Left" Margin="159,321,0,0" VerticalAlignment="Top" Height="18" Click="b4_Click"/>
+
+                <Grid Margin="394,-14,53,14">
+                    <GroupBox Header="ответы и доп." Margin="0,0,0,20"/>
+                    <DataGrid x:Name="data2" Margin="16,32,17,225"  />
+                    <Button x:Name="b3" Content="о проге" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="b3_Click" Margin="218,221,0,0"/>
+                    <Button x:Name="b2" Content="выход" HorizontalAlignment="Left"  VerticalAlignment="Top" Click="b2_Click" Margin="87,221,0,0"/>
+                    <Button x:Name="b5" Content="очистка" HorizontalAlignment="Center" VerticalAlignment="Top" Click="b5_Click" Margin="0,221,0,0"/>
+
+                </Grid>
+                <TextBox x:Name="col" HorizontalAlignment="Left" Margin="34,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="строки" HorizontalAlignment="Left" Margin="34,179,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
